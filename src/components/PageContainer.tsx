@@ -5,7 +5,7 @@ interface PageContainerProps {
 }
 
 const PageContainer: React.FC<PageContainerProps> = ({ children }) => {
-  return <div className="container mx-auto">{children}</div>;
+  return <div className="px-[5vw] lg:px-0 container mx-auto">{children}</div>;
 };
 
 export default PageContainer;
