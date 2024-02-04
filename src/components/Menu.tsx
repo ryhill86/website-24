@@ -23,7 +23,7 @@ const Menu: React.FC = () => {
     },
   ];
   return (
-    <nav className="flex text-slate-800 text-primary justify-between px-[5vw] py-9 lg:py-12">
+    <nav className="flex text-primary justify-between px-[5vw] py-9 lg:py-12">
       <Link to="/">
         <img src={Logo} className="logo h-12" alt="Vite logo" />
       </Link>

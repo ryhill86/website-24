@@ -14,22 +14,22 @@ const About: React.FC = () => {
         </p>
         {/* add image of penny */}
         <p className="my-4">
-          Once upon a time, I even was even a ping pong champion.
+          Once upon a time, I even was even an (office) ping pong 🏓 champion 🏆
         </p>
         {/* add image of ping pong */}
         <p className="my-2">
-          I've been coding for over 9 years and have worked with a variety of
-          technologies. I'm currently focused on building web applications with
-          React, TypeScript, and Node.js.
+          I've been coding for over 9 years and have worked with a wide variety
+          of technologies. I'm currently focused on building web applications
+          with React, TypeScript, and Node.js.
         </p>
         <h2 className="text-3xl md:text-4xl my-8">Expertise</h2>
-        <div className="flex flex-wrap mt-4">
-          <SkillPill skill="React" />
-          <SkillPill skill="Node.js" />
-          <SkillPill skill="PHP" />
-          <SkillPill skill="TypeScript" />
-          <SkillPill skill="CSS / SCSS / TailwindCSS" />
-          <SkillPill skill="HTML5" />
+        <div className="flex flex-wrap mt-4 bg-secondary text-primary rounded-lg p-6 justify-center">
+          <SkillPill dark skill="React" />
+          <SkillPill dark skill="Node.js" />
+          <SkillPill dark skill="PHP" />
+          <SkillPill dark skill="TypeScript" />
+          <SkillPill dark skill="CSS / SCSS / TailwindCSS" />
+          <SkillPill dark skill="HTML5" />
         </div>
         <h2 className="text-3xl md:text-4xl my-8">Additional Skills</h2>
         <div className="flex flex-wrap mt-4">

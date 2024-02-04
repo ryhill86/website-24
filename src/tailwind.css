@@ -18,6 +18,10 @@
   .bg-primary {
     @apply bg-white dark:bg-slate-800;
   }
+
+  .bg-secondary {
+    @apply bg-slate-900 dark:bg-gray-100;
+  }
 }
 
 /* :root {
