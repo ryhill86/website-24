@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .border-primary {
+    @apply border-gray-900 dark:border-white;
+  }
+
+  .text-primary {
+    @apply text-black dark:text-white;
+  }
+
+  .text-inverse {
+    @apply text-white dark:text-black;
+  }
+
+  .bg-primary {
+    @apply bg-white dark:bg-slate-800;
+  }
+}
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

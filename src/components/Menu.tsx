@@ -17,9 +17,13 @@ const Menu: React.FC = () => {
       title: 'Projects',
       route: '/projects',
     },
+    {
+      title: 'Contact',
+      route: '/contact',
+    },
   ];
   return (
-    <nav className="flex text-slate-800 dark:text-white justify-between px-[5vw] py-9 lg:py-12">
+    <nav className="flex text-slate-800 text-primary justify-between px-[5vw] py-9 lg:py-12">
       <Link to="/">
         <img src={Logo} className="logo h-12" alt="Vite logo" />
       </Link>
@@ -36,8 +40,9 @@ const Menu: React.FC = () => {
         ))}
       </ul>
       <div className="self-center">
-        <a href=""></a>
-        <img className="h-6" src={GithubLogo} />
+        <a target="_blank" rel="noreferrer" href="https://github.com/ryhill86/">
+          <img className="h-6" src={GithubLogo} />
+        </a>
       </div>
     </nav>
   );

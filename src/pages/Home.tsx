@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import ColoradoFlag from '../assets/ColoradoFlag.svg';
-import Scene from '../assets/scene.svg';
 import SceneNoBorder from '../assets/scene-no-border.svg';
 
 const Home: React.FC = () => {
@@ -15,13 +14,13 @@ const Home: React.FC = () => {
     }
   }, [startAnimation]);
   return (
-    <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row text-white">
+    <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row text-primary">
       <div className="w-full self-center align-middle pt-[15vh]">
         <div className="h-full text-left pl-[4vw]">
           <h1 className="font-semibold text-5xl mb-8">Ryan Hill</h1>
           <div className="">
             Senior Software Engineer
-            <p>Crafting moments of digital delight</p>
+            <p>Creating moments of digital delight</p>
           </div>
         </div>
       </div>
