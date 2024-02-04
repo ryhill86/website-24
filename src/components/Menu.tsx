@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from '../assets/RHLogoNoWords.svg';
 import { Link, NavLink } from 'react-router-dom';
-
+import GithubLogo from '../assets/github-mark-white.svg';
 
 const Menu: React.FC = () => {
   const menuItems = [
@@ -19,9 +19,9 @@ const Menu: React.FC = () => {
     },
   ];
   return (
-    <nav className="flex text-slate-800 dark:text-white justify-between">
+    <nav className="flex text-slate-800 dark:text-white justify-between px-[5vw] py-9 lg:py-12">
       <Link to="/">
-        <img src={Logo} className="logo" alt="Vite logo" />
+        <img src={Logo} className="logo h-12" alt="Vite logo" />
       </Link>
       <ul className="items flex list-none">
         {menuItems.map(menuItem => (
@@ -35,7 +35,10 @@ const Menu: React.FC = () => {
           </li>
         ))}
       </ul>
-      <div className="self-center github-logo">Github</div>
+      <div className="self-center">
+        <a href=""></a>
+        <img className="h-6" src={GithubLogo} />
+      </div>
     </nav>
   );
 };

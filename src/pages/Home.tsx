@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import RHLogo2 from '../assets/RHLogoNoWords.svg';
+import ColoradoFlag from '../assets/ColoradoFlag.svg';
+import Scene from '../assets/scene.svg';
+import SceneNoBorder from '../assets/scene-no-border.svg';
 
 const Home: React.FC = () => {
   const [startAnimation, setStartAnimation] = useState(false);
@@ -13,18 +15,28 @@ const Home: React.FC = () => {
     }
   }, [startAnimation]);
   return (
-    <div className="container text-white">
-      <div>
-        <button onClick={() => setStartAnimation(true)}>
-          <img src={RHLogo2} className="logo" alt="Vite logo" />
-        </button>
+    <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row text-white">
+      <div className="w-full self-center align-middle pt-[15vh]">
+        <div className="h-full text-left pl-[4vw]">
+          <h1 className="font-semibold text-5xl mb-8">Ryan Hill</h1>
+          <div className="">
+            Senior Software Engineer
+            <p>Crafting moments of digital delight</p>
+          </div>
+        </div>
       </div>
-      <h1>Ryan Hill</h1>
-      <div className="card">
-        Senior Software Engineer
-        <p>Crafting moments of digital delight</p>
+      <div className="w-full self-center align-middle text-center pt-[15vh]">
+        {/* photo of yours truly */}
+        <img src={SceneNoBorder} className="mx-auto" alt="Vite logo" />
+        <p className="mt-8">
+          {'Based in Colorado | USA  '}
+          <img
+            className="h-6 inline-block ml-2"
+            src={ColoradoFlag}
+            alt="Colorado Flag"
+          />
+        </p>
       </div>
-      <p className="read-the-docs">Based in Colorado | USA</p>
     </div>
   );
 };
