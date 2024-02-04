@@ -2,6 +2,7 @@ import React from 'react';
 import Github from '../assets/github-mark-white.svg';
 import LinkedIn from '../assets/LinkedIn.svg';
 import Gmail from '../assets/Gmail.svg';
+import { githubUrl } from '../helpers/constants';
 
 const Contact: React.FC = () => {
   return (
@@ -20,7 +21,7 @@ const Contact: React.FC = () => {
         >
           <img className="h-12" src={LinkedIn} alt="LinkedIn" />
         </a>
-        <a href="" target="_blank" rel="noreferrer" className="mr-6">
+        <a href={githubUrl} target="_blank" rel="noreferrer" className="mr-6">
           <img className="h-12" src={Github} alt="GitHub" />
         </a>
         <a
