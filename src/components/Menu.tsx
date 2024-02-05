@@ -2,26 +2,9 @@ import React from 'react';
 import Logo from '../assets/RHLogoNoWords.svg';
 import { Link, NavLink } from 'react-router-dom';
 import GithubLogo from '../assets/github-mark-white.svg';
+import { githubUrl, menuItems } from '../helpers/constants';
 
 const Menu: React.FC = () => {
-  const menuItems = [
-    {
-      title: 'Home',
-      route: '/',
-    },
-    {
-      title: 'About',
-      route: '/about',
-    },
-    {
-      title: 'Projects',
-      route: '/projects',
-    },
-    {
-      title: 'Contact',
-      route: '/contact',
-    },
-  ];
   return (
     <nav className="flex text-primary justify-between px-[5vw] py-9 lg:py-12">
       <Link to="/">
@@ -40,7 +23,7 @@ const Menu: React.FC = () => {
         ))}
       </ul>
       <div className="self-center">
-        <a target="_blank" rel="noreferrer" href="https://github.com/ryhill86/">
+        <a target="_blank" rel="noreferrer" href={githubUrl}>
           <img className="h-6" src={GithubLogo} />
         </a>
       </div>
