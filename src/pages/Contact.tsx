@@ -24,12 +24,7 @@ const Contact: React.FC = () => {
         <a href={githubUrl} target="_blank" rel="noreferrer" className="mr-6">
           <img className="h-12" src={Github} alt="GitHub" />
         </a>
-        <a
-          href="mailto:ryan.hill09@gmail.com"
-          target="_blank"
-          rel="noreferrer"
-          className="mr-6"
-        >
+        <a href="mailto:ryan.hill09@gmail.com" className="mr-6">
           <img className="h-12" src={Gmail} alt="Gmail" />
         </a>
       </div>
