@@ -3,11 +3,19 @@ export type Project = {
   description: string;
   tech: string[];
   github?: string;
-  images?: string[];
+  images?: Image[]; // relative path to image
+  highlights?: string[];
+};
+
+type Image = {
+  src: string;
+  alt: string;
+  caption: string;
+  name: string;
 };
 
 export type Projects = {
   [key: string]: Project[];
 };
 
-export type TechType = Project['tech'][];
+export type Tech = Project['tech'][];

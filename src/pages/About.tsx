@@ -12,6 +12,7 @@ const About: React.FC = () => {
           family, playing with my dog, Penny, or hitting some tennis balls. You
           also might find me baking some homemade sourdough bread 👀.
         </p>
+        {/* TODO add person / professional sections */}
         {/* add image of penny */}
         <p className="my-4">
           Once upon a time, I even was even an (office) ping pong 🏓 champion 🏆
