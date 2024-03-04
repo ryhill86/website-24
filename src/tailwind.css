@@ -3,6 +3,18 @@
 @tailwind utilities;
 
 @layer utilities {
+  :root {
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    box-sizing: border-box;
+    * {
+      box-sizing: inherit;
+    }
+  }
   .border-primary {
     @apply border-gray-900 dark:border-white;
   }

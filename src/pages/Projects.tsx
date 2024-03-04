@@ -89,34 +89,19 @@ const Projects: React.FC = () => {
       </div>
       {activeProject && (
         <Modal isOpen={!!activeProject} onClose={() => setActiveProject(null)}>
-          <div className="text-slate-800 p-4">
-            <h1>Project Gallery</h1>
-            <h2>Project: {activeProject.title}</h2>
-            <div className="flex flex-col">
-              {activeProjectImage && (
-                <div className="grow w-full text-center mx-auto my-8">
-                  <img
-                    className="w-full mx-auto"
-                    src={activeProjectImage.src}
-                    alt={activeProject.title}
-                  />
-                  <div>
-                    <h3 className="text-inverse">{activeProjectImage.name}</h3>
-                    <p className="text-inverse">{activeProjectImage.caption}</p>
-                  </div>
-                </div>
-              )}
+          <div className="text-slate-800">
+            <div className="flex flex-col md:flex-row">
               {
                 /* display other images in smaller grid below hero image */
                 activeProject?.images && (
-                  <div className="grow-0">
-                    <div className={`grid grid-cols-4 gap-4 px-12 mx-auto`}>
+                  <div className="flex-none w-1/4 flex flex-row bg-slate-300 p-4">
+                    <div className="px-2 mx-auto">
                       {activeProject.images.map(image => {
                         return (
                           <div
                             className={`${
                               image.name === activeImage
-                                ? 'border-2 border-primary dark border text-primary dark bg-white dark:bg-slate-800 dark:text-inverse'
+                                ? 'border-2 border-primary dark border text-primary dark bg-white dark:border-slate-800 dark:border-2 dark:text-inverse'
                                 : ''
                             } p-3 rounded-lg`}
                           >
@@ -143,6 +128,28 @@ const Projects: React.FC = () => {
                   </div>
                 )
               }
+              <div className="flex-1 p-4">
+                <h2 className="font-bold">Project: {activeProject.title}</h2>
+                <div className="flex flex-col">
+                  {activeProjectImage && (
+                    <div className="grow w-full text-center mx-auto my-8">
+                      <img
+                        className="w-full mx-auto"
+                        src={activeProjectImage.src}
+                        alt={activeProject.title}
+                      />
+                      <div>
+                        <h3 className="text-inverse">
+                          {activeProjectImage.name}
+                        </h3>
+                        <p className="text-inverse">
+                          {activeProjectImage.caption}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </div>
             </div>
           </div>
         </Modal>
